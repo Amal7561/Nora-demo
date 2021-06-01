@@ -125,14 +125,10 @@ header .nav .btn-user:hover {
 }
 
 .menu-bar .hamburger span {
-  background: white;
+  background: black;
   width: 25px;
   height: 2px;
   margin-bottom: 6.7px;
-}
-
-header.sticky .menu-bar .hamburger span{
-  background: black;
 }
 
 .menu-bar .hamburger span {
@@ -158,19 +154,24 @@ header.sticky .menu-bar .hamburger span{
   header .nav .navigation {
     flex-flow: column;
     position: absolute;
-    background: #a79c9c;
+    background: white;
     top: 0;
     right: -100%;
-    width: 100%;
+    width: 70%;
     height: 100vh;
-    padding-left: 25px;
-    padding-top: 60px;
+    padding-top: 150px;
     transform-origin: left;
     transition: all 0.5s ease-in-out;
     z-index: 9999;
+    align-items: center;
   }
+
   header .nav .navigation li {
     margin: 15px 0;
+  }
+
+  header .nav .navigation li a{
+    color: black;
   }
 
   .menu-bar {
@@ -185,6 +186,13 @@ header.sticky .menu-bar .hamburger span{
     padding: 2px 5px;
   }
   
+}
+
+@media (max-width:512px){
+  header .nav .btn-user {
+    margin: 0 5px;
+    padding: 2px 2px;
+  }
 }
 
 
@@ -211,7 +219,7 @@ header.sticky .menu-bar .hamburger span{
 }
 
 .modal{
-  z-index: 999;
+  z-index: 9999999;
   margin-top: 100px;
 }
 
