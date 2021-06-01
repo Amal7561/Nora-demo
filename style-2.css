@@ -1,0 +1,138 @@
+.mainContent{
+    width: 1142px;
+    margin: 0 auto;
+}
+
+.solutionsSize {
+    position: relative; top: -28rem;
+}
+
+
+.solutions{
+    border: 2px solid #fff;
+    border-radius: 12px;
+    background-color: rgba(255, 255, 255, 0.75);
+    padding: 0;
+    max-width: 1142px;
+    box-shadow: 5px 5px 10px 0.5rem rgba(0, 0, 0, 0.25);
+}
+
+.solutions h3{
+    background-color: grey;
+    width: 100%;
+    display: block;
+    margin: 0;
+    padding: 15px;
+    font-size: 1.5rem;
+}
+
+.solutions h4{
+    border-radius: 10px 10px 0 0;
+}
+
+.solutions h3 a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.solutions ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.solutions ul li{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.solutions ul li div ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: grey;
+}
+
+.solutions ul li div ul li {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.solutions ul li div ul li a {
+    color: #fff;
+}
+
+
+.solutions ul li a{
+    text-decoration: none;
+    color: #00416B;
+    display: block;
+    padding: 15px;
+    margin: 0;
+    border-bottom: 1px solid rgba(112, 112, 112, 0.25);
+    cursor: pointer;
+}
+
+.solutions ul li a:hover{
+    background-color: #0814b2;
+    color: #fff;
+   
+}
+
+.solutions ul li a:active{
+    background-color: #0814b2;
+    color: #fff;
+}
+
+.solutions ul li a:last-child{
+    border-bottom: none;
+}
+
+.solutions .nav-links[data-toggle].collapsed:after {
+    content: "▾";
+    float: right;
+}
+
+.solutions .nav-links[data-toggle]:not(.collapsed):after {
+    content: "▴";
+    float: right;
+}
+
+
+@media only screen and (max-width: 1199px){
+    .solutions ul li a{
+        padding: 10px 15px;
+    }
+    .mainContent{
+        width: 95% !important;
+        margin: 0 auto !important;
+    }
+
+    .solutionsSizePosition {
+        position: relative; top: 5.5rem;
+        min-width: 50% !important;
+    }
+    .mainContent{
+        width: 95% !important;
+        margin: 0 auto !important;
+    }
+}
+
+@media only screen and (max-width: 768px){
+    .solutions ul li a{
+        padding: 15px;
+    }
+    .solutionsSizePosition {
+        position: relative; top: 5rem;
+        min-width: 50% !important;
+    }
+    .solutionsSize {
+        max-width: 60% !important;
+    }
+    .solutionsSizePosition {
+        position: relative; top: 1rem;
+        min-width: 50% !important;
+    }
+}

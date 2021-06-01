@@ -1,0 +1,822 @@
+
+html {
+    scroll-behavior: smooth;
+  }
+  
+  
+  
+ 
+  
+  .blue10{
+      background-color: rgba(0, 65, 107, 0.1);
+  }
+  
+  .blue-btn{
+      background-color: #BFCBD5;
+      box-shadow: none;
+      border: none;
+      width: 170px;
+      padding: 10px;
+  }
+  
+  .pro{
+      text-align: left;
+  }
+  
+  .pro a{
+      color: rgba(0, 65, 107, 1);
+  }
+  
+  
+  .pro h4{
+      font-size: 1.1rem;
+  }
+  
+  .blue{
+      background-color: rgba(0, 65, 107, 1);
+  }
+  
+  .red{
+      color: rgba(253, 73, 92, 1);
+  }
+  
+  .redBG{
+      background-color: rgba(253, 73, 92, 1);
+  }
+  
+  .small p{
+      margin: 15px 0;
+  }
+  
+  .proStar a{
+      color: rgba(0, 65, 107, 0.3);
+      font-size: 1rem;
+  }
+  
+  .proStar a:hover{
+      color: rgba(253, 73, 92, 1);
+  }
+  
+  .rating {
+      float:left;
+    }
+  
+  .rating label{
+        padding-right: 2rem;
+    }
+  
+  .rating label span{
+      display: none;
+  }
+  
+  
+  .footer ul{
+      list-style: none;
+  }
+  
+  .footer ul li{
+      margin: 0;
+      padding: 10px 0;
+  }
+  
+  .footer ul li:first-child{
+      margin-top: 20px;
+  }
+  
+  .footer ul li a{
+      display: block;
+      color: #fff;
+      font-size: 0.8rem;
+  }
+  
+  .footer ul li a i{
+      font-size: 1rem;
+  }
+  
+  .white{
+      color: #fff;
+  }
+  
+  .whiteBG{
+      background-color: #fff;
+  }
+  
+  .banner-inner h1 {
+      padding: 0 1rem;
+  }
+  
+  .regLog2{
+      display: none;
+  }
+  
+  .carousel-control-prev,
+  .carousel-control-next {
+      width: auto;
+  }
+  
+  .carousel-control-prev {
+      text-align: left;
+      padding-left: 1.5rem;
+    }
+  
+    /* :not(:checked) is a filter, so that browsers that don’t support :checked don’t 
+      follow these rules. Every browser that supports :checked also supports :not(), so
+      it doesn’t make the test unnecessarily selective */
+    .rating:not(:checked) > input {
+        position:absolute;
+        top:-9999px;
+        clip:rect(0,0,0,0);
+    }
+  
+    .rating:not(:checked) > label {
+        float:right;
+        width:1em;
+        /* padding:0 .1em; */
+        overflow:hidden;
+        white-space:nowrap;
+        cursor:pointer;
+        font-size: 1.1rem;
+        /* line-height:1.2; */
+        color: rgba(0, 65, 107, 0.3);
+    }
+  
+    .rating:not(:checked) > label::before {
+      font-family: "Font Awesome 5 Free";
+      font-weight: 900;
+      content: "\f005";
+    }
+  
+    .rating > input:checked ~ label {
+      color: rgba(253, 73, 92, 1);
+        
+    }
+  
+    .rating:not(:checked) > label:hover,
+    .rating:not(:checked) > label:hover ~ label {
+      color: rgba(0, 65, 107, 1);
+        
+    }
+  
+    .rating > input:checked + label:hover,
+    .rating > input:checked + label:hover ~ label,
+    .rating > input:checked ~ label:hover,
+    .rating > input:checked ~ label:hover ~ label,
+    .rating > label:hover ~ input:checked ~ label {
+      color: rgba(0, 65, 107, 1);
+        
+    }
+  
+    .rating > label:active {
+        position:relative;
+        top:2px;
+        left:2px;
+    }
+  
+    .wish {
+      float:left;
+    }
+  
+  .wish label{
+        padding-right: 2rem;
+    }
+  
+  .wish label span{
+      display: none;
+  }
+  
+    /* :not(:checked) is a filter, so that browsers that don’t support :checked don’t 
+      follow these rules. Every browser that supports :checked also supports :not(), so
+      it doesn’t make the test unnecessarily selective */
+    .wish:not(:checked) > input {
+        position:absolute;
+        top:-9999px;
+        clip:rect(0,0,0,0);
+    }
+  
+    .wish:not(:checked) > label {
+        float:right;
+        width:1em;
+        /* padding:0 .1em; */
+        overflow:hidden;
+        white-space:nowrap;
+        cursor:pointer;
+        font-size: 1rem;
+        /* line-height:1.2; */
+        color: rgba(253, 73, 92, 0.4);
+    }
+  
+    .wish:not(:checked) > label::before {
+      font-family: "Font Awesome 5 Free";
+      font-weight: 900;
+      content: "\f004";
+    }
+  
+    .wish > input:checked ~ label {
+      color: rgba(253, 73, 92, 1);
+        
+    }
+  
+    .wish:not(:checked) > label:hover,
+    .wish:not(:checked) > label:hover ~ label {
+      color: rgba(253, 73, 92, 1);
+        
+    }
+  
+    .wish > input:checked + label:hover,
+    .wish > input:checked + label:hover ~ label,
+    .wish > input:checked ~ label:hover,
+    .wish > input:checked ~ label:hover ~ label,
+    .wish > label:hover ~ input:checked ~ label {
+      color: rgba(253, 73, 92, 1);
+        
+    }
+  
+    .wish > label:active {
+        position:relative;
+        top:2px;
+        left:2px;
+    }
+  
+    .enquiry {
+      float:left;
+    }
+  
+  
+    /* :not(:checked) is a filter, so that browsers that don’t support :checked don’t 
+      follow these rules. Every browser that supports :checked also supports :not(), so
+      it doesn’t make the test unnecessarily selective */
+    .enquiry:not(:checked) > input {
+        position:absolute;
+        top:-9999px;
+        clip:rect(0,0,0,0);
+    }
+  
+    .enquiry:not(:checked) > label {
+        float:right;
+        /* padding:0 .1em; */
+        overflow:hidden;
+        white-space:nowrap;
+        cursor:pointer;
+        font-size: 0.9rem;
+        /* line-height:1.2; */
+        color: rgba(0, 65, 107, 1);
+    }
+  
+    .enquiry:not(:checked) > label::before {
+      font-family: "Font Awesome 5 Free";
+      font-weight: 900;
+      content: "\f07a ";
+      padding-right: 0.5rem;
+    }
+  
+    .enquiry:not(:checked) > label:hover,
+    .enquiry:not(:checked) > label:hover ~ label {
+      color: rgba(0, 65, 107, 1);
+        
+    }
+  
+    .enquiry > input:checked + label:hover,
+    .enquiry > input:checked + label:hover ~ label,
+    .enquiry > input:checked ~ label:hover,
+    .enquiry > input:checked ~ label:hover ~ label,
+    .enquiry > label:hover ~ input:checked ~ label {
+      color: rgba(253, 73, 92, 1);
+        
+    }
+  
+    .enquiry > label:active {
+        position:relative;
+        top:2px;
+        left:2px;
+    }
+  
+  .icon-font-size-4rem{
+      font-size: 4rem;
+  }
+  
+  
+  .list-style-none{
+      list-style: none;
+  }
+  
+  footer{
+      position: relative;
+      bottom: 0;
+  }
+  
+  ul.resources {
+      list-style: none;
+  }
+  
+  .resources li::before{
+      content: "\f1c1";
+      font-family: "Font Awesome 5 Free";
+      margin-left: -1.5rem;
+      width: 1.5rem;
+      display: inline-block;
+  }
+  
+  .resources li a{
+      color: rgba(0, 65, 107, 0.75);
+  }
+  
+  .resources li a:hover{
+      color: rgba(0, 65, 107, 1);
+  }
+  
+  .border-rightN {
+    border-right: 1px solid rgba(0, 0, 0, 0.25) !important;
+  }
+  
+  blockquote{
+      border-left:none
+  }
+  
+  .quote-badge{
+      background-color: rgba(0, 0, 0, 0.2);   
+  }
+  
+  .quote-box{
+      overflow: hidden;
+      margin-top: -50px;
+      padding-top: -100px;
+      border-radius: 17px;
+      background-color: #00416b;
+      margin-top: 25px;
+      color:white;
+      width: 100%;
+      box-shadow: 2px 2px 2px 2px #E0E0E0;
+  }
+  
+  .quote-box hr{
+      color: #fff;
+      border-color: #fff;
+  }
+  
+  .quotation-mark{
+      margin-top: -10px;
+      font-weight: bold;
+      font-size:100px;
+      color:white;
+      font-family: "Times New Roman", Georgia, Serif;
+      
+  }
+  
+  .quote-text{
+      font-size: 1rem;
+      margin-top: -65px;
+  }
+  
+  .lsArrow{
+      background: url(../images/ls_arrow.svg);
+      position: relative;
+      right: 0;
+      bottom: 0;
+      background-repeat: no-repeat;
+  }
+  
+  .display-block{
+      display: block;
+  }
+  
+  
+  .z-index1{
+      z-index: 500;
+      position: relative;
+  }
+  
+  .z-index2{
+      z-index: 1000;
+  }
+  
+  .res-heading {
+      padding-top: 9rem;
+      padding-bottom: 9rem;
+      padding-left: 6rem;
+  }
+  
+  
+  .solutionsSize {
+      position: relative; top: -28rem;
+  }
+  
+  @media only screen and (max-width: 1367px){
+      #calloutCont{
+          right: 0;
+      }
+  
+      #cBanner1{
+          background: url(../images/banner1_1367.png);
+      }
+  
+      #cBanner2{
+          background: url(../images/banner2_1367.png);
+      }
+  
+      #cBanner3{
+          background: url(../images/banner3_1367.png);
+      }
+    }
+  
+  
+  @media only screen and (max-width: 1199px){
+      .solutions ul li a{
+          padding: 10px 15px;
+      }
+      
+      .regLog2{
+          display: block;
+      }
+  
+      .regLog{
+          display: none;
+      }
+  
+      .solutionsSizePosition {
+          position: relative; top: 5.5rem;
+          min-width: 50% !important;
+      }
+  
+      .mainContent{
+          width: 95%;
+          margin: 0 auto !important;
+          
+      }
+  
+      .banner {
+          overflow: hidden;
+      }
+  
+      .res-heading {
+          padding: 1rem 0.5rem 0 0.5rem;
+          text-align: center !important;
+          float: none !important;
+          min-width: 95% !important;
+          margin: 0 auto !important;
+      }
+  
+      .banner h1 {
+          text-align: center !important;
+          font-size: 1.75rem;
+      }
+  
+      .banner-inner h1 {
+          text-align: center !important;
+          font-size: 1.75rem;
+      }
+      
+      .search-sec{
+          background: rgba(26, 70, 104, 0.51);
+      }
+  
+      .solution{
+          display: none;
+      }
+  
+      .mainContent{
+          width: 95% !important;
+          margin: 0 auto !important;
+      }
+  
+      .user{
+          float: right !important;
+      }
+  
+      .search-slt{
+          display: block;
+          width: 100%;
+          font-size: 0.875rem;
+          line-height: 1.5;
+          color: rgba(84, 86, 90, 0.25);
+          background-color: #fff;
+          background-image: none;
+          border: 1px solid #ccc;
+          height: calc(2.5rem + 1px) !important;
+          border-radius:0;
+      }
+      .wrn-btn{
+          width: 100%;
+          font-size: 16px;
+          font-weight: 400;
+          text-transform: capitalize;
+          height: calc(3rem + 2px) !important;
+          border-radius:0;
+          background-color: rgba(253, 73, 92, 0.9);
+      }
+  
+      .forSmall{
+          display: block;
+      }
+  
+      .col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12, .col,
+      .col-auto, .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm,
+      .col-sm-auto, .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12, .col-md,
+      .col-md-auto, .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg,
+      .col-lg-auto, .col-xl-1, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl,
+      .col-xl-auto  {
+      width: 90%;
+      margin: 0 auto;
+      }
+  
+      .flexi{
+          margin-bottom: 30px;
+      }
+  
+      .navbar-dark .navbar-nav .nav-link {
+          color: #00416B;
+        }
+  
+      .navbar-dark .navbar-nav .nav-link {
+          color: #00416B;
+          background-color: #fff;
+        }
+  
+        #cBanner1, #cBanner2, #cBanner3 {
+          height: 500px;
+          width: 100%;
+      }
+  
+      #cBanner1{
+          background: url(../images/banner1_1024.png);
+          background-size: cover;
+      }
+  
+      #cBanner2{
+          background: url(../images/banner2_1024.png);
+          background-size: cover;
+      }
+  
+      #cBanner3{
+          background: url(../images/banner3_1024.png);
+          background-size: cover;
+      }
+  }
+  
+  @media only screen and (max-width: 1024px){
+      #cBanner1{
+          background: url(../images/banner1_1024.png);
+          background-size: cover;
+      }
+  
+      #cBanner2{
+          background: url(../images/banner2_1024.png);
+          background-size: cover;
+      }
+  
+      #cBanner3{
+          background: url(../images/banner3_1024.png);
+          background-size: cover;
+      }
+  }
+  
+  @media only screen and (max-width: 960px){
+      .regLog2{
+          display: block;
+      }
+  
+      #cBanner1{
+          background: url(../images/banner1_960.png);
+      }
+  
+      #cBanner2{
+          background: url(../images/banner2_960.png);
+      }
+  
+      #cBanner3{
+          background: url(../images/banner3_960.png);
+      }
+  
+      /*.carousel-handler {
+          display: none;
+      }*/
+  
+      .res-sol {
+          padding: 20px;
+          text-align: center;
+      }
+  
+      .cr-box {
+          display: flex;
+          flex-flow: column;
+        }
+      .cr1 {
+          order: 2;
+        }
+      .cr2 {
+          order: 1;
+        }
+  
+      .regLog{
+          display: none;
+      }
+      
+      .navbar-dark .navbar-nav .nav-link {
+          color: #00416B;
+          background-color: #fff;
+        }
+  
+        .navLinks:hover{
+          text-decoration: none;
+          background-color: #00416B;
+          color: #fff;
+        }
+  
+        .logo{
+          display: none;
+      }
+  
+      #logo{
+          display: block;
+      }
+  }
+  
+  
+  @media only screen and (max-width: 768px){
+     
+      
+      .solutionsSizePosition {
+          position: relative; top: 5rem;
+          min-width: 50% !important;
+      }
+  
+      .regLog2{
+          display: block;
+      }
+  
+      .regLog{
+          display: none;
+      }
+      
+      .search-sec{
+          background: rgba(26, 70, 104, 0.51);
+      }
+  
+      .logo{
+          display: none;
+      }
+  
+      #logo{
+          display: block;
+      }
+  
+  
+      .navigator{
+          float: left;
+          position: absolute;
+          top: 50px;
+          background-color: #fff;
+          z-index: 500;
+      }
+  
+      .solutionsSize {
+          max-width: 60% !important;
+      }
+  
+      .banner h1{
+          font-size: 1.75rem;
+          text-align: center;
+          padding-top: 0;
+          margin-top: 2rem;
+      }
+  
+      .user{
+          float: right !important;
+      }
+  
+      .cr-box {
+          display: flex;
+          flex-flow: column;
+        }
+      .cr1 {
+          order: 2;
+        }
+      .cr2 {
+          order: 1;
+        }
+  
+      .search-slt{
+          display: block;
+          width: 100%;
+          font-size: 0.875rem;
+          line-height: 1.5;
+          color: rgba(84, 86, 90, 0.25);
+          background-color: #fff;
+          background-image: none;
+          border: 1px solid #ccc;
+          height: calc(2.5rem + 1px) !important;
+          border-radius: 0;
+      }
+      .wrn-btn{
+          width: 100%;
+          font-size: 16px;
+          font-weight: 400;
+          text-transform: capitalize;
+          height: calc(3rem + 2px) !important;
+          border-radius:0;
+          background-color: rgba(253, 73, 92, 0.9);
+      }
+  
+      .forSmall{
+          display: block;
+      }
+  
+      .col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12, .col,
+      .col-auto, .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm,
+      .col-sm-auto, .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12, .col-md,
+      .col-md-auto, .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg,
+      .col-lg-auto, .col-xl-1, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl,
+      .col-xl-auto  {
+      width: 90%;
+      margin: 0 auto;
+      }
+  
+      .flexi{
+          margin-bottom: 30px;
+      }
+  
+      .navbar-dark .navbar-nav .nav-link {
+          color: #00416B;
+        }
+  
+      .navbar-dark .navbar-nav .nav-link {
+          color: #00416B;
+          background-color: #fff;
+        }
+  
+      #cBanner1, #cBanner2, #cBanner3 {
+          height: 600px;
+          width: 100%;
+      }
+  
+      .banner {
+          min-height: 600px !important;
+      }
+  
+      #cBanner1{
+          background: url(../images/banner1_768.png);
+      }
+  
+      #cBanner2{
+          background: url(../images/banner2_768.png);
+      }
+  
+      #cBanner3{
+          background: url(../images/banner3_768.png);
+      }
+  
+      .solutionsSizePosition {
+          position: relative; top: 1rem;
+          min-width: 50% !important;
+      }
+  }
+  
+  
+  
+  @media only screen and (max-width: 576px){
+      .regLog2{
+          display: block;
+      }
+  
+      .regLog{
+          display: none;
+      }
+      
+      .col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12, .col,
+      .col-auto, .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm,
+      .col-sm-auto, .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12, .col-md,
+      .col-md-auto, .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg,
+      .col-lg-auto, .col-xl-1, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl,
+      .col-xl-auto  {
+      width: 90%;
+      margin: 0 auto;
+      }
+  
+      .flexi{
+          margin-bottom: 30px;
+      }
+  
+      #cBanner1, #cBanner2, #cBanner3 {
+          height: 600px;
+          width: 100%;
+      }
+  
+      #cBanner1{
+          background: url(../images/banner1_mobile.png);
+          background-size: cover;
+      }
+  
+      #cBanner2{
+          background: url(../images/banner2_mobile.png);
+          background-size: cover;
+      }
+  
+      #cBanner3{
+          background: url(../images/banner3_mobile.png);
+          background-size: cover;
+      }
+  }
+  
+  @media only screen and (max-width: 414){
+      
+  }
+  
